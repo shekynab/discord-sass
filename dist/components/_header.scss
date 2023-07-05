@@ -1,0 +1,56 @@
+.header{
+    background: $clr-violet;
+    position: relative;
+    &_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .branding{
+        display: flex;
+        h3{
+            color: $clr-light;
+        }
+    }
+    &_nav{
+        position: absolute;
+        background: lightseagreen;
+        top: 0rem;
+        right: 0rem;
+        height: 100vh;
+        width: 75%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        ul{
+            li{
+                a{
+                    color: $clr-light;
+                }
+            }
+        }
+        a.download{
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+
+        }
+    }
+
+    &_actions{
+        display: flex;
+        align-items: center;
+        .toggle_menu{
+            span{
+                width: 2.5rem;
+                height: 0.3rem;
+                background-color: $clr-light;
+                display: block;
+                &:nth-child(2){
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+    }
+}

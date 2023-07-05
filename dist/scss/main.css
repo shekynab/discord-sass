@@ -1,0 +1,112 @@
+/*--------------SCSS-------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+@font-face {
+  font-family: "myfont";
+  src: url("fonts/TT Hoves Pro Trial Black.woff") format("woff");
+}
+
+.container {
+  max-width: 140rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+/*--------------COMPONENTS-------------*/
+.header {
+  background: hsl(235, 83%, 59%);
+  position: relative;
+}
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .branding {
+  display: flex;
+}
+.header .branding h3 {
+  color: hsl(0, 0%, 100%);
+}
+.header_nav {
+  position: absolute;
+  background: lightseagreen;
+  top: 0rem;
+  right: 0rem;
+  height: 100vh;
+  width: 75%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header_nav ul li a {
+  color: hsl(0, 0%, 100%);
+}
+.header_nav a.download {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.header_actions {
+  display: flex;
+  align-items: center;
+}
+.header_actions .toggle_menu span {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: hsl(0, 0%, 100%);
+  display: block;
+}
+.header_actions .toggle_menu span:nth-child(2) {
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent;
+  background: transparent;
+  color: hsl(206, 9%, 15%);
+  border-radius: 5rem;
+  text-align: center;
+}
+.btn.bg-light {
+  background: hsl(0, 0%, 100%);
+}
+.btn.bg-light:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.btn.bg-violet {
+  background: hsl(235, 83%, 59%);
+  color: hsl(0, 0%, 100%);
+}
+.btn.bg-violet.btn-light {
+  background: hsl(0, 0%, 100%);
+}
+.btn.bg-violet.btn-light:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/*--------------PAGES-------------*//*# sourceMappingURL=main.css.map */

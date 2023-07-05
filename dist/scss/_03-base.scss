@@ -1,0 +1,14 @@
+html {
+    font-size: 62.5%;
+}
+    
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @font-face {
+        font-family: "myfont";
+        src: url("fonts/TT Hoves Pro Trial Black.woff") format('woff');
+      }
+}
+    
